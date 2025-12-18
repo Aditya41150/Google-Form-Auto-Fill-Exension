@@ -105,7 +105,7 @@ function renderList(mappings) {
       <div class="kv"><strong>${escapeHTML(k)}</strong><span>${escapeHTML(
       String(mappings[k])
     )}</span></div>
-      <button class="icon danger" title="Delete">✕</button>
+      <button class="icon danger" title="Delete">&times;</button>
     `;
     const delBtn = item.querySelector("button");
     delBtn.addEventListener("click", async () => {
