@@ -1,4 +1,4 @@
-# Google Forms Autofill (MV3)
+# Google Forms Autofill 
 
 Chrome extension to auto-fill Google Forms from your saved answers.
 ## JUST DOWNLOAD THIS REPOSITORY , Code->download ZIP follow following steps
