@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Google Forms Autofill",
+  "version": "2.1",
+  "description": "Autofill Google Forms using your saved answers",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/forms/*",
+        "https://docs.google.com/forms/d/*",
+        "https://docs.google.com/forms/u/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

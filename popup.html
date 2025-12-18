@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Forms Autofill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Google Forms Autofill</h2>
+
+<div class="input-group">
+        <label>Question Keyword</label>
+        <input type="text" id="questionKey" placeholder="e.g. Name, Email">
+        <small>Matches question text or input label.</small>
+    </div>
+
+    <div class="input-group">
+        <label>Answer</label>
+        <textarea id="answerText" rows="2" placeholder="Type your answer"></textarea>
+    </div>
+
+    <div class="row">
+        <button id="saveBtn">Save Pair</button>
+        <button id="fillBtn" class="secondary">Fill Form</button>
+    </div>
+
+    <div class="toggles">
+        <label class="toggle">
+            <input type="checkbox" id="autoFillOnLoad">
+            <span>Auto-fill when a form loads</span>
+        </label>
+    </div>
+
+    <h3>Saved Mappings</h3>
+    <div id="savedList" class="list"></div>
+
+    <div class="bulk">
+        <h3>Bulk Import/Export</h3>
+        <textarea id="bulkJson" rows="3" placeholder='{"name":"John","email":"john@x.com"}'></textarea>
+        <div class="row">
+            <button id="importBtn" class="secondary">Import JSON</button>
+            <button id="exportBtn" class="secondary">Export JSON</button>
+        </div>
+    </div>
+
+    <button id="clearAllBtn" class="danger">Clear All</button>
+
+<script src="popup.js"></script>
+</body>
+</html>

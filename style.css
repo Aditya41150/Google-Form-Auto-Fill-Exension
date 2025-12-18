@@ -1,0 +1,142 @@
+:root {
+  --primary: #1a73e8;
+  --primary-hover: #0c56d0;
+  --bg: #ffffff;
+  --text: #202124;
+  --muted: #5f6368;
+  --border: #e0e3e7;
+  --surface: #f8f9fa;
+  --danger: #d93025;
+  --danger-hover: #b3261e;
+}
+
+body {
+  width: 360px;
+  padding: 14px;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+h3 {
+  margin: 14px 0 8px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+.input-group small {
+  color: var(--muted);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  box-sizing: border-box;
+}
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+button.secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+button.danger {
+  background: var(--danger);
+}
+button.icon {
+  width: auto;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+button:hover {
+  background: var(--primary-hover);
+}
+button.secondary:hover {
+  background: #eef1f4;
+}
+button.danger:hover {
+  background: var(--danger-hover);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.mapping {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.mapping .kv {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 8px;
+  align-items: center;
+}
+.mapping .kv strong {
+  color: var(--text);
+}
+.mapping .kv span {
+  color: var(--muted);
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.toggles {
+  margin: 6px 0 4px;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.bulk textarea {
+  margin-top: 6px;
+}
