@@ -1,26 +1,14 @@
 # Google Forms Autofill (MV3)
 
 Chrome extension to auto-fill Google Forms from your saved answers.
+## JUST DOWNLOAD THIS REPOSITORY , Code->download ZIP follow following steps
 
-## Features
-- Save key → answer pairs (e.g., "Name" → "Jane Doe").
-- Matches by question text or the input's `aria-label`.
-- Supports text, textarea, select, radio, checkbox, date, and time.
-- Bulk import/export mappings as JSON.
-- Optional: auto-fill automatically when a form loads.
-
-## Requirements
-- Google Chrome (or any Chromium browser: Edge, Brave, Vivaldi).
-- Developer Mode enabled to load the extension from source.
-
+# IMPORTANT STEPS: 
 ## Load Unpacked (Install in Developer Mode)
 1. Download or clone this repository to your computer.
 2. Open Chrome and go to `chrome://extensions/`.
 3. Turn on "Developer mode" (switch in the top-right corner).
-4. Click "Load unpacked" and select the project folder that contains:
-  - `manifest.json`
-  - `content.js`
-  - `popup.html`, `popup.js`, `style.css`
+4. Click "Load unpacked" and select the downloaded folder.
 5. The extension should appear in your list. Optionally click the puzzle icon in the toolbar and pin the extension for quick access.
 
 ## Update / Reload After Making Changes
@@ -61,11 +49,6 @@ Chrome extension to auto-fill Google Forms from your saved answers.
 ## Privacy
 - Your mappings are stored locally using Chrome `storage.sync`. If you're signed into Chrome, they may sync across your devices with the same profile.
 - No data is sent to any server by this extension.
-
-## Troubleshooting
-- "Could not reach the content script": refresh the Google Form tab and try again (content scripts attach per-tab).
-- Nothing filled: verify your keys match the form's question text/labels; try shorter keywords; reload the extension and refresh the form.
-- Some inputs are custom: Google Forms UI can change—keep your keys simple and try again.
 
 ## For Microsoft Edge or Other Chromium Browsers
 - Edge: use `edge://extensions/` for load, reload, and removal; steps are the same.
