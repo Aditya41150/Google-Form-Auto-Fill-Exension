@@ -3,9 +3,27 @@
   "name": "Google Forms Autofill",
   "version": "2.1",
   "description": "Autofill Google Forms using your saved answers",
-  "permissions": ["storage", "tabs"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "google-forms-autofill@extension"
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icons/extension_icon.png",
+    "32": "icons/extension_icon.png",
+    "48": "icons/extension_icon.png",
+    "128": "icons/extension_icon.png"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/extension_icon.png",
+      "32": "icons/extension_icon.png"
+    }
   },
   "content_scripts": [
     {
@@ -14,7 +32,9 @@
         "https://docs.google.com/forms/d/*",
         "https://docs.google.com/forms/u/*"
       ],
-      "js": ["content.js"],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ]

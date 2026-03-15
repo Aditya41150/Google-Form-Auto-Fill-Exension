@@ -1,78 +1,114 @@
-# Google Forms Autofill (MV3)
+# Google Form Auto Fill Extension 🚀
 
-Chrome extension to auto-fill Google Forms from your saved answers.
+A Chrome extension that helps you automatically fill Google Forms using predefined answers.  
+This extension is useful for saving time when filling repetitive forms such as college forms, surveys, and registrations.
 
-## Features
-- Save key → answer pairs (e.g., "Name" → "Jane Doe").
-- Matches by question text or the input's `aria-label`.
-- Supports text, textarea, select, radio, checkbox, date, and time.
-- Bulk import/export mappings as JSON.
-- Optional: auto-fill automatically when a form loads.
+---
 
-## Requirements
-- Google Chrome (or any Chromium browser: Edge, Brave, Vivaldi).
-- Developer Mode enabled to load the extension from source.
+## ✨ Features
 
-## Load Unpacked (Install in Developer Mode)
-1. Download or clone this repository to your computer.
-2. Open Chrome and go to `chrome://extensions/`.
-3. Turn on "Developer mode" (switch in the top-right corner).
-4. Click "Load unpacked" and select the project folder that contains:
-  - `manifest.json`
-  - `content.js`
-  - `popup.html`, `popup.js`, `style.css`
-5. The extension should appear in your list. Optionally click the puzzle icon in the toolbar and pin the extension for quick access.
+- Auto-fills Google Form input fields
+- Simple and clean popup UI
+- Works completely locally (no data sent to any server)
+- User-triggered actions only
+- Lightweight and easy to use
 
-## Update / Reload After Making Changes
-- When you edit files in this folder, go to `chrome://extensions/` and click the "Reload" button on the extension card to apply changes.
-- If a Google Form tab is already open, refresh that tab so the updated content script runs.
+---
 
-## Disable or Remove (Uninstall)
-- Disable: toggle off the switch on the extension card in `chrome://extensions/`.
-- Remove: click "Remove" on the extension card to uninstall it.
+## 📦 Installation (Using Load Unpacked)
 
-## Usage: Filling a Google Form
-1. Open a Google Form (`https://docs.google.com/forms/...`).
-2. Click the extension icon to open the popup.
-3. Add a mapping:
-  - Question Keyword: a word or short phrase from the question text or label (e.g., `Name`, `Email`).
-  - Answer: your desired answer.
-  - Click "Save Pair". Repeat for as many fields as you like.
-4. (Optional) Bulk import mappings: paste a JSON object and click "Import JSON". Example:
-  ```json
-  {
-    "Name": "Jane Doe",
-    "Email": "jane@example.com",
-    "Role": "Student"
-  }
-  ```
-5. Click "Fill Form". A toast appears with how many fields were filled. You can also enable "Auto-fill when a form loads".
+> ⚠️ This extension is intended to be used locally using Chrome Developer Mode.  
+> Publishing on the Chrome Web Store is not required.
 
-### How Matching Works
-- Matching is case-insensitive and accent-insensitive. The extension normalizes text before matching.
-- It first tries exact matches between your key and the question/label. If none, it tries partial matches (key contained in question text).
-- For options (radio/checkbox/select), it matches by the visible option text.
+### Step 1: Clone or Download the Repository
 
-### Tips for Good Matches
-- Use concise keywords (e.g., `Phone`, `Department`, `Email`).
-- If a field doesn't fill, try simplifying the key or confirming the question text on the page.
-- For selects or multiple-choice, ensure your answer text closely matches the visible option.
+```bash
+git clone https://github.com/Aditya41150/Google-Form-Auto-Fill-Exension.git
+```
 
-## Privacy
-- Your mappings are stored locally using Chrome `storage.sync`. If you're signed into Chrome, they may sync across your devices with the same profile.
-- No data is sent to any server by this extension.
+Alternatively, click **Code** → **Download ZIP** and extract the files.
 
-## Troubleshooting
-- "Could not reach the content script": refresh the Google Form tab and try again (content scripts attach per-tab).
-- Nothing filled: verify your keys match the form's question text/labels; try shorter keywords; reload the extension and refresh the form.
-- Some inputs are custom: Google Forms UI can change—keep your keys simple and try again.
+### Step 2: Open Chrome Extensions Page
 
-## For Microsoft Edge or Other Chromium Browsers
-- Edge: use `edge://extensions/` for load, reload, and removal; steps are the same.
-- Brave/Vivaldi: use their `chrome://extensions/` equivalent pages.
+Open Google Chrome and navigate to:
 
-## Files
-- `manifest.json`: Chrome Manifest V3 configuration.
-- `content.js`: autofill logic injected into Google Forms pages.
-- `popup.html`, `popup.js`, `style.css`: popup UI to manage mappings and trigger fill.
+```
+chrome://extensions
+```
 
+### Step 3: Enable Developer Mode
+
+Enable Developer mode using the toggle in the top-right corner of the page.
+
+### Step 4: Load the Extension
+
+1. Click **Load unpacked**
+2. Select the project folder (the folder containing `manifest.json`)
+3. Click **Select Folder**
+
+The extension will now be installed locally in your browser.
+
+---
+
+## 🧭 How to Use the Extension
+
+1. Open any Google Form
+2. Click the extension icon in the Chrome toolbar
+3. Use the popup interface to trigger the auto-fill action
+4. The form fields will be filled automatically
+
+The extension performs actions only when initiated by the user.
+
+---
+
+## 🔄 Updating the Extension
+
+After making any changes to the code, icons, or `manifest.json`:
+
+1. Go to `chrome://extensions`
+2. Click the **Reload** (🔄) button for the extension
+
+The updated changes will be applied instantly.
+
+---
+
+## 🔐 Privacy Policy
+
+- No personal data is collected
+- No data is transmitted to external servers
+- All processing happens locally within the browser
+- Any stored data remains on the user's device
+
+---
+
+## 🛠 Technology Stack
+
+- JavaScript
+- Chrome Extensions API (Manifest V3)
+- HTML
+- CSS
+
+---
+
+## 📌 Notes
+
+- Designed specifically for Google Forms
+- Intended for educational and productivity purposes
+- Changes in Google Form structure may require updates to the extension
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Open a pull request
+
+---
+
+## 👤 Author
+
+**Aditya**
+
+- GitHub: https://github.com/Aditya41150
