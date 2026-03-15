@@ -5,7 +5,10 @@
   "description": "Autofill Google Forms using your saved answers",
   "browser_specific_settings": {
     "gecko": {
-      "id": "google-forms-autofill@extension"
+      "id": "google-forms-autofill@extension",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "permissions": [
