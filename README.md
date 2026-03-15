@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Google Form Auto Fill Extension 🚀
 
 A Chrome extension that helps you automatically fill Google Forms using predefined answers.  
@@ -12,9 +13,24 @@ This extension is useful for saving time when filling repetitive forms such as c
 - Works completely locally (no data sent to any server)
 - User-triggered actions only
 - Lightweight and easy to use
+=======
+# Google Forms Autofill 
+
+Chrome extension to auto-fill Google Forms from your saved answers.
+## JUST DOWNLOAD THIS REPOSITORY , Code->download ZIP follow following steps
+
+# IMPORTANT STEPS: 
+## Load Unpacked (Install in Developer Mode)
+1. Download or clone this repository to your computer.
+2. Open Chrome and go to `chrome://extensions/`.
+3. Turn on "Developer mode" (switch in the top-right corner).
+4. Click "Load unpacked" and select the downloaded folder.
+5. The extension should appear in your list. Optionally click the puzzle icon in the toolbar and pin the extension for quick access.
+>>>>>>> 30b82e6ea2accae77c9a369c78fca8dc385ec108
 
 ---
 
+<<<<<<< HEAD
 ## 📦 Installation (Using Load Unpacked)
 
 > ⚠️ This extension is intended to be used locally using Chrome Developer Mode.  
@@ -112,3 +128,5 @@ The updated changes will be applied instantly.
 **Aditya**
 
 - GitHub: https://github.com/Aditya41150
+=======
+>>>>>>> 30b82e6ea2accae77c9a369c78fca8dc385ec108
